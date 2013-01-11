@@ -71,7 +71,7 @@
     display: none;
 	width: 44px !important;
 	height: 44px !important;
-	background-image: url(../Images/carousel-arrows.png);
+	background-image: url(../images/carousel-arrows.png);
 	position: absolute;
 	top: 30px;
 	cursor: pointer;

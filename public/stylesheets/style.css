@@ -75,7 +75,7 @@ h3{
 	position: relative;
 	float: left;
 	width: 100%;
-	background-image: url(../Images/header-bg.png);
+	background-image: url(../images/header-bg.png);
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
@@ -168,7 +168,7 @@ div.RadTabStrip_navigation {
 	float: left;
 	padding: 0px 10px;
 	color: white;
-	background-image: url(../Images/btn.png);
+	background-image: url(../images/btn.png);
 	height: 32px;
 	line-height: 32px;
 	margin-top: 10px;
@@ -215,7 +215,7 @@ div.RadTabStrip_navigation {
 	float: left;
 	text-indent: 20px;
 	font-size: 11px;
-	background-image: url(../Images/link-arrow.gif);
+	background-image: url(../images/link-arrow.gif);
 	background-repeat: no-repeat;
 	background-position: 5px 5px;
 	line-height: 20px;
