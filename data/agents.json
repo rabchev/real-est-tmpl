@@ -1,0 +1,33 @@
+[
+    {
+        "name"      : "Charlie S. Poole",
+        "address"   : "1274 Hillview Drive, Ukiah",
+        "state"     : "CA 95482",
+        "phone"     : "707-245-0882"
+    }, {
+        "name"      : "Coskun Sunali",
+        "address"   : "3008 Scenicview Drive, Seattle",
+        "state"     : "WA 98106",
+        "phone"     : "425-985-2915"
+    }, {
+        "name"      : "Debra E. Burton",
+        "address"   : "1451 Collins Avenue, Columbus",
+        "state"     : "OH 43215",
+        "phone"     : "614-820-4094"
+    }, {
+        "name"      : "Joseph M. Forst",
+        "address"   : "618 Alpha Avenue, Arlington",
+        "state"     : "TX 76006",
+        "phone"     : "903-999-1174"
+    }, {
+        "name"      : "Martha C. Murchison",
+        "address"   : "229 Anmoore Road, Staten Island",
+        "state"     : "NY 10301",
+        "phone"     : "718-816-4131"
+    }, {
+        "name"      : "Velma J. Osborn",
+        "address"   : "78 James Street, Rochester",
+        "state"     : "NY 14620",
+        "phone"     : "585-756-5016"
+    }
+]

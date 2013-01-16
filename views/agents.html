@@ -1,3 +1,64 @@
-<h1>
-    {{title}}
-</h1>
+<div class="sf_cols">
+    <div class="sf_colsOut sf_1col_1_100">
+        <div class="sf_colsIn sf_1col_1in_100">
+            <h1>Our Agents</h1>
+            <div class="agents">
+                {{#each rows}}
+                <div class="row">
+                    {{#each this}}
+                    <div class="column-small">
+                        <div class="block">
+                            <p>
+                                <a href="agents/charlie-s.-poole"></a>
+                            </p>
+                            <div></div>
+                            <p></p>
+                            <h3>{{name}}</h3>
+                            <address>
+                                {{address}}<br>
+                                {{state}}<br>
+                                {{phone}}
+                            </address>
+                            <a href="agents/charlie-s.-poole">
+                                Contact agent
+                            </a>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+                {{/each}}
+            </div>
+            <input name="ctl00_Content_C001_agentsFrontendList_ctl00_AgentsList_ClientState" type="hidden" autocomplete="off" />
+            <span style="display:none;"></span>
+            <script type="text/javascript" src="/javascripts/jquery.fancybox-1.3.3.js"></script>
+            <script language="javascript" type="text/javascript">
+                
+    $(document).ready(function () {
+
+        // globals
+        var speed = 500, 
+    		speedFast = Math.round(speed / 2);
+        jQuery('.agents a').fancybox({
+            padding: 30,
+            autoDimensions: false,
+            width: 780,
+            height: 575,
+            overlayColor: '#000',
+            overlayOpacity: 0.7,
+            speedIn: speedFast,
+            speedOut: speedFast,
+            changeSpeed: speedFast,
+            centerOnScroll: true,
+            onComplete: function () {
+                var div = $('<div style="display:none" />').appendTo(document.body);
+                var fb = $('#fancybox-content');
+                fb.find('.agent-single').appendTo(div);
+                fb.html('');
+                fb.append(div.children());
+            }
+        });
+    });
+            </script>
+        </div>
+    </div>
+</div>

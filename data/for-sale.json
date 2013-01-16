@@ -1,0 +1,31 @@
+[
+    {
+        "name"          : "2 bedroom Terraced for sale",
+        "price"         : "49,000",
+        "features"      : [
+            "Garden",
+            "Parking"
+        ],
+        "description"   : "Cosy unfurnished living space. Two bedrooms, living room, dining room, kitchen, walk-in closet, full bathroom, toilet. Set in diplomatic neighborhood with excellent transportation, close to metropolitan station.",
+        "picture"       : "/images/pictures/27_2.jpg"
+    }, {
+        "name"          : "The Wooden house",
+        "price"         : "300,000",
+        "features"      : [
+            "Fitness",
+            "Parking",
+            "Swinning Pool"
+        ],
+        "description"   : "A fine, remodelled and beautifully appointed family home in a lovely, lightly wooded setting on the periphery of the village, that affords great privacy and seclusion.",
+        "picture"       : "/images/pictures/24_3.jpg"
+    }, {
+        "name"          : "Family house",
+        "price"         : "920,000",
+        "features"      : [
+            "Parking",
+            "Swinning Pool"
+        ],
+        "description"   : "Exceptional property, located in a prestigious diplomatic area, with perfect access, 15 minutes drive to downtown. The property has very well maintained large garden and breath-taking view of the mountain.",
+        "picture"       : "/images/pictures/25_3668AF0709490.jpg"
+    }
+]

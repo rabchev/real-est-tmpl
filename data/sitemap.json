@@ -1,0 +1,52 @@
+[
+    {
+        "title"         : "Home",
+        "name"          : "",
+        "controler"     : "index",
+        "description"   : "",
+        "keywords"      : "",
+        "pages"         : []
+    }, {
+        "title"         : "For Rent",
+        "name"          : "for-rent",
+        "controler"     : "forRent",
+        "description"   : "",
+        "keywords"      : "",
+        "pages"         : []
+    }, {
+        "title"         : "For Sale",
+        "name"          : "for-sale",
+        "controler"     : "forSale",
+        "description"   : "",
+        "keywords"      : "",
+        "pages"         : []
+    }, {
+        "title"         : "Agents",
+        "name"          : "agents",
+        "controler"     : "",
+        "description"   : "",
+        "keywords"      : "",
+        "pages"         : []
+    }, {
+        "title"         : "News",
+        "name"          : "news",
+        "controler"     : "",
+        "description"   : "",
+        "keywords"      : "",
+        "pages"         : []
+    }, {
+        "title"         : "Events",
+        "name"          : "events",
+        "controler"     : "",
+        "description"   : "",
+        "keywords"      : "",
+        "pages"         : []
+    }, {
+        "title"         : "Contact Us",
+        "name"          : "contact-us",
+        "controler"     : "",
+        "description"   : "",
+        "keywords"      : "",
+        "pages"         : []
+    }
+]

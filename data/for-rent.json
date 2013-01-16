@@ -1,0 +1,26 @@
+[
+    {
+        "name"          : "Flat 456",
+        "price"         : "1,200",
+        "features"      : [
+            "Fitness",
+            "Garden",
+            "Parking",
+            "Shops"
+        ],
+        "description"   : "Unfurnished living place located on a quite street in prestigious diplomatic quarter. Consists of living room, dining area, kitchen, two bedrooms, full bathroom, toilet, walk-in closet, terrace.",
+        "picture"       : "/images/pictures/for-rent-2.jpg"
+    }, {
+        "name"          : "House 123",
+        "price"         : "1,500",
+        "features"      : [
+            "Fitness",
+            "Garden",
+            "Parking",
+            "Shops",
+            "Swinning Pool"
+        ],
+        "description"   : "The unique house, situated at the foot of the mountain. The house is located at a first class area and it is only 20 min. drive from downtown. The villa is surrounded by a marvelous park with various kinds of trees in fabulous over three thousand sq.m. garden.",
+        "picture"       : "/images/pictures/for-rent-1.jpg"
+    }
+]
