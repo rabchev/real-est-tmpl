@@ -2,10 +2,10 @@
 /*global require, exports, module */
 
 
-var express = require("express"),
-    routes = require("./routes"),
-    http = require("http"),
-    path = require("path");
+var express     = require("express"),
+    http        = require("http"),
+    path        = require("path"),
+    sitemap     = require("./data/sitemap.json");
 
 var app = express();
 
@@ -32,19 +32,22 @@ app.configure("development", function () {
 
 var hbs     = require("hbs"),
     fs      = require("fs"),
-    path    = require("path");
+    path    = require("path"),
+    i       = 0,
+    route   = sitemap[i];
 
 hbs.registerPartial('footer', fs.readFileSync(path.join(__dirname, "views", "footer.html"), 'utf8'));
 hbs.registerPartial('header', fs.readFileSync(path.join(__dirname, "views", "header.html"), 'utf8'));
 hbs.registerPartial('navigation', fs.readFileSync(path.join(__dirname, "views", "navigation.html"), 'utf8'));
 
-app.get("/", routes.index);
-app.get("/for-rent", require("./routes/forRent").get);
-app.get("/for-sale", require("./routes/forSale").get);
-app.get("/agents", require("./routes/agents").get);
-app.get("/news", require("./routes/news").get);
-app.get("/events", require("./routes/events").get);
-app.get("/contact-us", require("./routes/contactUs").get);
+while (route) {
+    var controler = route.controler;
+    if (!controler || controler === "") {
+        controler = route.name;
+    }
+    app.get("/" + route.name, require("./routes/" + controler).get);
+    route = sitemap[++i];
+}
 
 http.createServer(app).listen(app.get("port"), function () {
     "use strict";

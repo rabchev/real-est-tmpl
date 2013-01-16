@@ -10,7 +10,7 @@ hbs.registerPartial('fp-news', fs.readFileSync(path.join(__dirname, "..", "views
 hbs.registerPartial('fp-events', fs.readFileSync(path.join(__dirname, "..", "views", "fp-events.html"), 'utf8'));
 hbs.registerPartial('fp-social', fs.readFileSync(path.join(__dirname, "..", "views", "fp-social.html"), 'utf8'));
 
-exports.index = function (req, res) {
+exports.get = function (req, res) {
     "use strict";
     
     res.render('index', {

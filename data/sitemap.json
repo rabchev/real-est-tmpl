@@ -44,7 +44,7 @@
     }, {
         "title"         : "Contact Us",
         "name"          : "contact-us",
-        "controler"     : "",
+        "controler"     : "contactUs",
         "description"   : "",
         "keywords"      : "",
         "pages"         : []
