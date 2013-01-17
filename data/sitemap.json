@@ -9,14 +9,14 @@
     }, {
         "title"         : "For Rent",
         "name"          : "for-rent",
-        "controler"     : "forRent",
+        "controler"     : "",
         "description"   : "",
         "keywords"      : "",
         "pages"         : []
     }, {
         "title"         : "For Sale",
         "name"          : "for-sale",
-        "controler"     : "forSale",
+        "controler"     : "",
         "description"   : "",
         "keywords"      : "",
         "pages"         : []
@@ -44,7 +44,7 @@
     }, {
         "title"         : "Contact Us",
         "name"          : "contact-us",
-        "controler"     : "contactUs",
+        "controler"     : "",
         "description"   : "",
         "keywords"      : "",
         "pages"         : []

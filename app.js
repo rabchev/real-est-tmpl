@@ -41,15 +41,15 @@ hbs.registerPartial('header', fs.readFileSync(path.join(__dirname, "views", "hea
 hbs.registerPartial('navigation', fs.readFileSync(path.join(__dirname, "views", "navigation.html"), 'utf8'));
 
 while (route) {
-    var controler = route.controler;
-    if (!controler || controler === "") {
-        controler = route.name;
+    var controller = route.controler;
+    if (!controller || controller === "") {
+        controller = route.name;
     }
-    app.get("/" + route.name, require("./routes/" + controler).get);
+    app.get("/" + route.name, require("./controllers/" + controller).get);
     route = sitemap[++i];
 }
 
-http.createServer(app).listen(app.get("port"), function () {
+exports.server = http.createServer(app).listen(app.get("port"), function () {
     "use strict";
     
     console.log("Express server listening on port " + app.get("port"));
