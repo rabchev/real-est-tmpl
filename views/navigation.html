@@ -1,84 +1,18 @@
 <div class="RadTabStrip RadTabStrip_navigation RadTabStripTop_navigation">
     <div class="RadTabStrip RadTabStrip_navigation RadTabStripTop_navigation">
 		<div class="rtsLevel rtsLevel1">
-			<ul class="rtsUL">
+			<ul class="rtsUL">{{#each nodes}}
                 <li class="rtsLI rtsFirst">
-                    <a class="rtsLink rtsSelected" href="/">
+                    <a class="rtsLink rtsSelected" href="{{name}}">
                         <span class="rtsOut">
                             <span class="rtsIn">
                                 <span class="rtsTxt">
-                                    Home
+                                    {{title}}
                                 </span>
                             </span>
                         </span>
                     </a>
-                </li>
-                <li class="rtsLI">
-                    <a class="rtsLink rtsAfter" href="for-rent">
-                        <span class="rtsOut">
-                            <span class="rtsIn">
-                                <span class="rtsTxt">
-                                    For rent
-                                </span>
-                            </span>
-                        </span>
-                    </a>
-                </li>
-                <li class="rtsLI">
-                    <a class="rtsLink" href="for-sale">
-                        <span class="rtsOut">
-                            <span class="rtsIn">
-                                <span class="rtsTxt">
-                                    For sale
-                                </span>
-                            </span>
-                        </span>
-                    </a>
-                </li>
-                <li class="rtsLI">
-                    <a class="rtsLink" href="agents">
-                        <span class="rtsOut">
-                            <span class="rtsIn">
-                                <span class="rtsTxt">
-                                    Agents
-                                </span>
-                            </span>
-                        </span>
-                    </a>
-                </li>
-                <li class="rtsLI">
-                    <a class="rtsLink" href="news">
-                        <span class="rtsOut">
-                            <span class="rtsIn">
-                                <span class="rtsTxt">
-                                    News
-                                </span>
-                            </span>
-                        </span>
-                    </a>
-                </li>
-                <li class="rtsLI">
-                    <a class="rtsLink" href="events">
-                        <span class="rtsOut">
-                            <span class="rtsIn">
-                                <span class="rtsTxt">
-                                    Events
-                                </span>
-                            </span>
-                        </span>
-                    </a>
-                </li>
-                <li class="rtsLI rtsLast">
-                    <a class="rtsLink" href="contact-us">
-                        <span class="rtsOut">
-                            <span class="rtsIn">
-                                <span class="rtsTxt">
-                                    Contact Us
-                                </span>
-                            </span>
-                        </span>
-                    </a>
-                </li>
+                </li>{{/each}}
             </ul>
 		</div>
 	</div>

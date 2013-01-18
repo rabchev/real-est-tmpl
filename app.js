@@ -38,7 +38,7 @@ var hbs     = require("hbs"),
 
 hbs.registerPartial('footer', fs.readFileSync(path.join(__dirname, "views", "footer.html"), 'utf8'));
 hbs.registerPartial('header', fs.readFileSync(path.join(__dirname, "views", "header.html"), 'utf8'));
-hbs.registerPartial('navigation', fs.readFileSync(path.join(__dirname, "views", "navigation.html"), 'utf8'));
+hbs.registerHelper('navigation', require("./controllers/navigation").helper);
 
 while (route) {
     var controller = route.controler;
