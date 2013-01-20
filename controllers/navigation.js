@@ -10,6 +10,14 @@ var hbs         = require("hbs"),
 function init() {
     "use strict";
     
+    var i = 0,
+        node = sitemap[i];
+    
+    while (node) {
+        node.url = "/" + node.name;
+        node = sitemap[++i];
+    }
+    
     var html = fs.readFileSync(path.join(__dirname, "..", "views", "navigation.html"), 'utf8');
     hbs.registerPartial(tmplName, hbs.handlebars.compile(html));
 }
